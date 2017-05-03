@@ -12,6 +12,7 @@
 
 <body>
 	<!--<form action="index.php" onsubmit="return false" method="GET">-->
+    <div class="main_wrapper">
 	<form action="index.php" method="GET">
 		<div class="form_div">
 			<label for="mSize">m (по горизонтали):</label>
@@ -19,22 +20,22 @@
 			<br/>
 			<label for="nSize">n (по вертикали):</label>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="number" class="numInput" id="n" name="nSize" min="1" max="50" maxlength="2" required />
-		</div>
-		<div class="form_div">
-			<input type="submit" class="button positive" id="btnCreate" name="create" value="Create" autofocus/>
-			
-			<!--<button onclick="fill()" accept="" accesskey="" alt="" formaction="" id="btnCreate" name="fill" value="Заполнить"/>Заполнить</button>-->
-			<button class="button positive" id="btnCreate" name="fillButton" value="fill" alt="Заполнить"/>Заполнить</button>
-			<input onclick="" type="button" class="button positive" id="btnSolve" name="solve" value="solve" />
+            <input type="number" class="numInput" id="n" name="nSize" min="1" max="50" maxlength="2" required />
+        </div>
+        <div class="form_div">
+            <!--<input type="submit" class="button positive" id="btnCreate" name="create" value="Create" autofocus/>-->
+
+            <!--<button onclick="fill()" accept="" accesskey="" alt="" formaction="" id="btnCreate" name="fill" value="Заполнить"/>Заполнить</button>-->
+			<button class="button positive" id="btnCreate" name="fillButton" value="fill" alt="Заполнить">Заполнить</button>
+            <!--<input onclick="" type="button" class="button positive" id="btnSolve" name="solve" value="solve" />-->
 		</div>
 	</form>
 	
     <div class="output_field" id="output1">
 	
 		<?php
-		
-		echo '$_GET=' . print_r ($_GET, true);
+
+        //echo '$_GET=' . print_r ($_GET, true);
 		echo '<br/>';
 		
 		function makeGrid($x, $y) {
@@ -135,7 +136,7 @@
 			makeTable($nSize, $mSize, $array);
 		}
 		
-		if(isset($_GET['solve'])){
+		if(isset($_GET['fillButton'])){
 			$maxSize = 0;
 			$nIndex=0;
 			$mIndex=0;
@@ -155,8 +156,8 @@
 				}
 				
 			}
-			echo "Наибольший квадрат состоящий из единиц на данном поле<br/>имеет размеры $maxSize x $maxSize<br/>";
-			if($maxSize>0) echo "Координаты его верхнего левого угла: n = $nIndex и m = $mIndex";
+			echo "<br/><b>Наибольший квадрат состоящий из единиц на данном поле<br/>имеет размеры $maxSize x $maxSize</b><br/>";
+			if($maxSize>0) echo "<b>Координаты его верхнего левого угла: n = $nIndex и m = $mIndex</b>";
 		}
 		
 		?>
@@ -208,6 +209,8 @@
 		//});
 		
 	</script>-->
-	
+
+    </div>
+
 </body>
 </html>

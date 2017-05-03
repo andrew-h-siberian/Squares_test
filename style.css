@@ -1,62 +1,74 @@
-
-	.cell1 {
-		background-color: #abc;
-	}
-	
-	.cell2 {
-		background-color: #abb;
-	}
-	
-	.form_div {
-		margin: 4px;
-	}
-	
-	.numInput {
-		width: 50px;
-	}
-	
-	/* STANDARD */button:hover, .buttons a:hover{
-		background-color:#dff4ff;
-		border:1px solid #c2e1ef;
-		color:#336699;
-	}
-	.buttons a:active{
-		background-color:#6299c5;
-		border:1px solid #6299c5;
-		color:#fff;
-	}/* POSITIVE */button.positive, .buttons a.positive{
-		color:#529214;
-	}
-	.buttons a.positive:hover, button.positive:hover{
-		background-color:#E6EFC2;
-		border:1px solid #C6D880;
-		color:#529214;
-	}
-	.buttons a.positive:active{
-		background-color:#529214;
-		border:1px solid #529214;
-		color:#fff;
-	}/* NEGATIVE */.buttons a.negative, button.negative{
-		color:#d12f19;
-	}
-	.buttons a.negative:hover, button.negative:hover{
-		background:#fbe3e4;
-		border:1px solid #fbc2c4;
-		color:#d12f19;
-	}
-	.buttons a.negative:active{
-		background-color:#d12f19;
-		border:1px solid #d12f19;
-		color:#fff;
-	}
-
-
 body {
-	padding: 0;
+	padding: 18px;
 	margin: 0;
 	background: #d39c5c url(images/cork-bg.png);
 	color: #333333;
 }
+
+.cell1 {
+	background-color: #abc;
+}
+
+.cell2 {
+	background-color: #abb;
+}
+
+.form_div {
+	margin: 6px;
+}
+
+.main_wrapper {
+	margin: 12px;
+	padding: 18px;
+}
+
+.numInput {
+	width: 50px;
+}
+	
+/* STANDARD */button:hover, .buttons a:hover{
+	background-color:#dff4ff;
+	border:1px solid #c2e1ef;
+	color:#336699;
+}
+
+.buttons a:active{
+	background-color:#6299c5;
+	border:1px solid #6299c5;
+	color:#fff;
+}
+
+/* POSITIVE */
+button.positive, .buttons a.positive{
+	color:#529214;
+}
+
+.buttons a.positive:hover, button.positive:hover{
+	background-color:#E6EFC2;
+	border:1px solid #C6D880;
+	color:#529214;
+}
+
+.buttons a.positive:active{
+	background-color:#529214;
+	border:1px solid #529214;
+	color:#fff;
+}/* NEGATIVE */.buttons a.negative, button.negative{
+	color:#d12f19;
+}
+
+.buttons a.negative:hover, button.negative:hover{
+	background:#fbe3e4;
+	border:1px solid #fbc2c4;
+	color:#d12f19;
+}
+
+.buttons a.negative:active{
+	background-color:#d12f19;
+	border:1px solid #d12f19;
+	color:#fff;
+}
+
 #wrapper {
 	background: url(images/corkboard-top-bg.png) no-repeat center top;
 	width: 100%;
@@ -69,6 +81,7 @@ body {
 	border: solid 1px #ccc;
 	padding: 20px;
 }
+
 h1 {
 	margin: 0;
 	padding: 0;
