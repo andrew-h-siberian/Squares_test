@@ -1,13 +1,10 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="author" content="Andrew Kharchenko, andrew_h_siberian@rambler.ru" />
-
-  <link href="style.css" rel="stylesheet" />
-  
-  <title>Тестовое задание ("Квадраты")</title>
-  
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Andrew Kharchenko, andrew_h_siberian@rambler.ru" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Тестовое задание ("Квадраты")</title>
 </head>
 
 <body>
@@ -49,7 +46,7 @@
       echo '</table>';
     }
     
-    function generateValues($x, $y){
+    function generateValues($y, $x){
       global $array;
       for($i=1;$i<=$y;$i++) {
         for($j=1;$j<=$x;$j++) {
@@ -58,7 +55,7 @@
       }
     }
 
-    function makeTable($x, $y, $valuesArray){
+    function makeTable($y, $x, $valuesArray){
       echo '<table id="result" border="1px">';
       for($i=1;$i<=$y;$i++) {
         echo '<tr height="26px">';
@@ -83,8 +80,7 @@
       $limit = ($iLimit<$jLimit) ? $iLimit : $jLimit;
       //echo "limit for i=$i and j=$j is $limit";
       for($size=1;$size<$limit;$size++) {
-        //if($size=$limit) return $size; // ***CHECK*** if this is ok
-        
+
         $iCheck = $i + $size;
         for($jCheck=$j;$jCheck<=($j+$size);$jCheck++) {
           if($array[$iCheck-1][$jCheck-1]==0) return $size;
@@ -96,7 +92,6 @@
           if($array[$iCheck-1][$jCheck-1]==0) return $size;
         }
         
-        //if($size=$limit) return $size; //just return $size if condition in for loop is <$limit
       }
       return $size;
     }
@@ -121,11 +116,10 @@
     
     //вообще стоило сделать m - "вертикалью", а n "горизонталью", но уже взяли m и n "по геометрическому",
     //как x и y (сначала "горизонталь", потом "вертикаль"), будем в циклах обходить сначала n, потом m
-    
-    if(isset($_GET['create'])) makeGrid($nSize, $mSize);
+
+    //if(isset($_GET['create'])) makeGrid($nSize, $mSize);
     
     if(isset($_GET['fillButton'])){
-      //makeGrid($mSize, $nSize);
       generateValues($nSize, $mSize);
       makeTable($nSize, $mSize, $array);
     }

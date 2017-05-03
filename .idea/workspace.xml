@@ -4,7 +4,6 @@
     <list default="true" id="f55d858c-0ffa-4643-a842-1d2acec60f0c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="index.php" pinned="true" current-in-tab="true">
         <entry file="remoteDeploymentFS://&lt;c5e351f2-e786-4c2c-bc5e-936a4d12275f&gt;/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -130,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1493683997810</updated>
       <workItem from="1493684005303" duration="5045000" />
-      <workItem from="1493783004205" duration="2823000" />
+      <workItem from="1493783004205" duration="3337000" />
     </task>
     <task id="LOCAL-00001" summary="Clean old commented markup">
       <created>1493692078777</created>
@@ -146,11 +145,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493784570334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Кнопки - в одну и немного табуляции">
+      <created>1493785870960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493785870960</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7868000" />
+    <option name="totallyTimeSpent" value="8382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="1" width="1547" height="1034" extended-state="0" />
@@ -189,7 +195,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Clean old commented markup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean old commented markup" />
+    <MESSAGE value="Кнопки - в одну и немного табуляции" />
+    <option name="LAST_COMMIT_MESSAGE" value="Кнопки - в одну и немного табуляции" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
