@@ -46,12 +46,13 @@ button.positive, .buttons a.positive{
   color:#529214;
 }
 
+/* 
 .buttons a.positive:hover, button.positive:hover{
   background-color:#E6EFC2;
   border:1px solid #C6D880;
   color:#529214;
 }
-
+ */
 .buttons a.positive:active{
   background-color:#529214;
   border:1px solid #529214;
