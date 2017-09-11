@@ -1,8 +1,9 @@
 ﻿body {
   padding: 0;
   margin: 0;
-  background: #d39c5c url(images/cork-bg.png);
-  color: #999999;
+  /* background: #d39c5c url(images/cork-bg.png); */
+  background-color: #E2D3D3;
+  color: #E42C2C;
 }
 
 .main_wrapper {
