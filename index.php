@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="Andrew Kharchenko, andrew_h_siberian@rambler.ru" />
+    <meta name="author" content="https://github.com/andrew-h-siberian/Squares_test/ (andrew_h_siberian@rambler.ru)" />
     <link href="style.css" rel="stylesheet" />
     <title>Тестовое задание ("Квадраты")</title>
 </head>
