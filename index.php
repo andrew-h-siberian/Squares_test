@@ -12,7 +12,7 @@
     <div class="main_wrapper">
         <form action="index.php" method="GET">
             <div class="form_div">
-                <label for="mSize">m (по горизонтали):</label>
+                <label for="mSize">m (ПО ГОРИЗОНТАЛИ):</label>
                 <input type="number" class="numInput" id="m" name="mSize" min="1" max="50" maxlength="2"  required="required" />
                 <br/>
                 <label for="nSize">n (по вертикали):</label>
