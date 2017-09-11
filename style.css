@@ -27,11 +27,13 @@
   background-color: #bed4ca;
 }
 
-/* STANDARD */button:hover, .buttons a:hover{
+/* STANDARD */
+/*button:hover, .buttons a:hover{
   background-color:#dff4ff;
   border:1px solid #c2e1ef;
   color:#336699;
 }
+*/
 
 .buttons a:active{
   background-color:#6299c5;
