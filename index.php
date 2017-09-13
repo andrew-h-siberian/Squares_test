@@ -1,31 +1,31 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="https://github.com/andrew-h-siberian/Squares_test/ (andrew_h_siberian@rambler.ru)" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Тестовое задание ("Квадраты")</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="author" content="https://github.com/andrew-h-siberian/Squares_test/ (andrew_h_siberian@rambler.ru)" />
+  <link href="style.css" rel="stylesheet" />
+  <title>Тестовое задание ("Квадраты")</title>
 </head>
 
 <body>
-  <!--<form action="index.php" onsubmit="return false" method="GET">-->
-    <div class="main_wrapper">
-        <form action="index.php" method="GET">
-            <div class="form_div">
-                <label for="mSize">m (ПО ГОРИЗОНТАЛИ):</label>
-                <input type="number" class="numInput" id="m" name="mSize" min="1" max="50" maxlength="2"  required="required" />
-                <br/>
-                <label for="nSize">n (по вертикали):</label>
-                <input type="number" class="numInput" id="n" name="nSize" min="1" max="50" maxlength="2" required />
-            </div>
-            <div class="form_div">
-                <button class="button positive" id="btnCreate" name="fillButton" value="fill" autofocus>Сгенерировать и решить</button>
-            </div>
-        </form>
-  
+  <div class="main_wrapper">
+    <form action="index.php" method="GET">
+      <div class="form_div">
+        <label for="mSize">m (ПО ГОРИЗОНТАЛИ):</label>
+        <input type="number" class="numInput" id="m" name="mSize" min="1" max="50" maxlength="2" required="required" />
+        <br/>
+        <label for="nSize">n (по вертикали):</label>
+        <input type="number" class="numInput" id="n" name="nSize" min="1" max="50" maxlength="2" required />
+      </div>
+      <div class="form_div">
+        <button class="button positive" id="btnCreate" name="fillButton" value="fill" autofocus>Сгенерировать и решить</button>
+      </div>
+    </form>
+
     <div class="output_field" id="output1">
 
-    <?php
+      <?php
 
     echo '<br/>';
     
@@ -34,7 +34,6 @@
       for($i=1;$i<=$y;$i++) {
         echo '<tr height="26px">';
         for($j=1;$j<=$x;$j++) {
-          //echo "m = " . $i . " and n = " . $j . "<br/>";
           $cellClassNum = 1;
           if(($i+$j)%2==1) $cellClassNum = 2;
           echo "<td class=\"cell$cellClassNum\" width=\"26px\">";
@@ -60,7 +59,6 @@
       for($i=1;$i<=$y;$i++) {
         echo '<tr height="26px">';
         for($j=1;$j<=$x;$j++) {
-          //echo "m = " . $i . " and n = " . $j . "<br/>";
           $cellClassNum = 1;
           if(($i+$j)%2==1) $cellClassNum = 2;
           echo "<td class=\"cell$cellClassNum\" width=\"26px\"><b>";
@@ -72,7 +70,7 @@
       echo '</table>';
     }
 
-    //а здесь для разнообразия (опыта) передадим массив (копию) одним из параметров
+    //передадим массив (копию) одним из параметров
     function checkSizeFrom($i,$j,$nSize,$mSize,$array){
       
       $iLimit = $nSize - $i + 1;
@@ -113,12 +111,7 @@
     }
 
     $array = array();
-    
-    //вообще стоило сделать m - "вертикалью", а n "горизонталью", но уже взяли m и n "по геометрическому",
-    //как x и y (сначала "горизонталь", потом "вертикаль"), будем в циклах обходить сначала n, потом m
 
-    //if(isset($_GET['create'])) makeGrid($nSize, $mSize);
-    
     if(isset($_GET['fillButton'])){
       generateValues($nSize, $mSize);
       makeTable($nSize, $mSize, $array);
@@ -149,56 +142,11 @@
     }
     
     ?>
-    
-  </div>
-  
-  <!--<script>
-    document.write("1a2b3c".match(/[0-9]*/));
-    var numInputElements = document.getElementsByClassName("numInput");
-    for(var e of numInputElements) {
-      //e.addEventListener("keyup", valNum(e));
-      //e.addEventListener("keyup", valNum(e));
-      e.addEventListener("keypress", function(evt) {
-        console.log("Key pressed: " + evt.charCode + " - " + evt.keyCode);
-        var keycode = evt.charCode || evt.keyCode;
-        //if (keycode == 46 || this.value.length==3) {
-        console.log(typeof e);
-        console.log(e);
-        console.log(e.value);
-        if(isNaN(e.value)){
-          e.value=e.value.match(/[0-9]*/);
-          console.log("hello!!! " + e.value);
-          return false;
-        }
-      });
-    }
-    
-  /*  on("keypress", function(evt) {
-    var keycode = evt.charCode || evt.keyCode;
-    if (keycode == 46 || this.value.length==3) {
-    return false;
-    }
-  });*/
-    
-    //function valNum(x){
-    //  //var e = document.getElementById(x);
-    //  if(isNaN(x.val())){
-    //    document.write(x);
-    //    x.val(x.val().match(/[0-9]*/));
-    //  }
-    //}
-    
-    //left as an example of regexp little flaw
-    //keyup(function() {
-    //  var e = document.getElementById("m");
-    //  if(isNaN(e.val())){
-    //    e.val(e.val().match(/[0-9]*/)); //so, why not to hate regexp when they can contain "end of multiline commentary section" set of characters? :)
-    //  }
-    //});
-    
-  </script>-->
 
     </div>
 
+  </div>
+
 </body>
+
 </html>
